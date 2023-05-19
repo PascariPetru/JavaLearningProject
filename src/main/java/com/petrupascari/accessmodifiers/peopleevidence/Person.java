@@ -1,5 +1,7 @@
 package com.petrupascari.accessmodifiers.peopleevidence;
+
 import com.petrupascari.accessmodifiers.ChisinauEvidenceCatalog;
+
 public class Person {
     // This property is class related - Class variable, it is private - it can be accessed within the Person
     private static int totalNumberOfPersonObjects;
@@ -21,15 +23,16 @@ public class Person {
     String education;
     String nationality;
     boolean isMarried;
-     String readingBook;
+    String readingBook;
     String emailAddress;
     String occupation;
 
     // There is a constructor with only 1 parameter that is mandatory field
-    public Person(long CNPobligatoriuLaCreare){
+    public Person(long CNPobligatoriuLaCreare) {
         CNP = CNPobligatoriuLaCreare;
         totalNumberOfPersonObjects++;
-     }
+    }
+
     // There is a constructor with ultiple parameter that is mandatory fields
     public Person(long CNP, String name, boolean isMarried, int age) {
         this.CNP = CNP;
@@ -38,9 +41,11 @@ public class Person {
         this.age = age;
         totalNumberOfPersonObjects++;
     }
-    public static void printNUmberOfPeople(){
+
+    public static void printNUmberOfPeople() {
         System.out.println("Numarul total de persoane este: " + totalNumberOfPersonObjects);
     }
+
     @Override
     public String toString() {
         return "Person{" +
