@@ -1,0 +1,4 @@
+rind 1
+rind 2
+rind 3
+qwerty 4
